@@ -1,0 +1,47 @@
+<%- include('../partials/header'); -%>
+
+  <div class="py-4"></div>
+  <section class="section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class=" col-lg-9   mb-5 mb-lg-0">
+          <article>
+
+
+            <img src="/images/books/<%=result[0].img%>" width="20%" style="margin-bottom: 2%;" alt="post-thumb">
+
+
+            <h1 class="h2">
+              <%= result[0].name %>
+            </h1>
+            <ul class="card-meta my-3 list-inline">
+              <li class="list-inline-item">
+                <!-- <a href="author-single.html" class="card-meta-author">
+                <img src="images/john-doe.jpg"> -->
+                <span>
+                  <%= result[0].author %>
+                </span>
+                <!-- </a> -->
+              </li>
+
+
+            </ul>
+
+
+            <div class="content">
+              <p>
+                <%=result[0].about%>
+              </p>
+
+            </div>
+          </article>
+
+    
+          <a href="/student/book/read/<%=result[0].id%>" class="btn btn-success">Read</a>
+
+        </div>
+
+  </section>
+
+
+  <%- include('../partials/footer'); -%>
